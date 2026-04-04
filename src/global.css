@@ -14,3 +14,8 @@
       scrollbar-width: none;
   }
 }
+
+:root {
+  /* Define el radio que usa el componente de Tailwind UI */
+  --radius-lg: 1rem; 
+}
