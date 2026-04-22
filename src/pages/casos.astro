@@ -194,22 +194,22 @@ const caseStudies = [
   <!-- ========================================== -->
   <!-- NUEVO LAYOUT EXPERIMENTAL (FLOTANTE)       -->
   <!-- ========================================== -->
-  <section class="relative w-full flex flex-col items-center justify-start overflow-hidden bg-slate-50 pt-24 pb-32 border-b border-slate-200">
+  <section class="relative w-full flex flex-col items-center justify-start overflow-hidden pt-24 pb-32">
     
     <!-- Título Central -->
     <div class="relative z-20 max-w-3xl lg:max-w-4xl text-center px-6 mb-16">
       <span class="font-bold tracking-wider uppercase text-brand text-sm mb-4 block">Case studies</span>
-      <h2 class="text-4xl md:text-5xl lg:text-7xl tracking-tight text-balance text-gray-950 font-serif">
+      <h2 class="text-4xl md:text-5xl lg:text-7xl tracking-[-0.07em] text-balance text-gray-950">
         Turning Complex Challenges into Seamless Experiences
       </h2>
       <p class="mt-6 text-base md:text-lg text-slate-900 font-regular">Explore some of my featured case studies.</p>
     </div>
 
-    <!-- Contenedor de Cards (Fila Horizontal) -->
+    <!-- Contenedor de Cards (Una Fila) -->
     <div class="relative z-10 flex flex-wrap justify-center items-start gap-4 sm:gap-8 lg:gap-10 w-full max-w-7xl px-6">
-      
+
       <!-- Card 1: Expedia -->
-      <div class="w-24 md:w-32 lg:w-40 p-2 flex flex-col items-center text-center transform hover:-translate-y-2 hover:scale-105 hover:z-30 transition-all duration-300 cursor-pointer group/float" onclick="document.getElementById('modal-expedia').showModal()">
+      <div class="w-24 md:w-32 lg:w-40 p-2 flex flex-col items-center text-center transform hover:-translate-y-2 hover:z-30 transition-all duration-300 cursor-pointer group/float" onclick="document.getElementById('modal-expedia').showModal()">
         <div class="relative w-full mb-2 md:mb-3">
           <img src="/Folder.png" alt="Decoración fondo" class="w-full h-auto object-contain relative z-0">
           <img src="/expedia-cover-3.png" alt="Expedia Doc 3" class="absolute inset-0 w-full h-full object-contain z-[3] p-3.5 md:p-5 rounded-xl transition-transform duration-300 group-hover/float:-translate-y-3 md:group-hover/float:-translate-y-6 group-hover/float:-translate-x-2 md:group-hover/float:-translate-x-3 group-hover/float:scale-105 group-hover/float:-rotate-12">
@@ -217,42 +217,42 @@ const caseStudies = [
           <img src="/expedia-cover-1.png" alt="Expedia" class="absolute inset-0 w-full h-full object-contain z-[5] p-3.5 md:p-5 rounded-xl transition-transform duration-300 group-hover/float:-translate-y-2 md:group-hover/float:-translate-y-4 group-hover/float:scale-110 group-hover/float:rotate-3">
           <img src="/Folder2.png" alt="Decoración frente" class="absolute inset-0 w-full h-full object-contain z-10 transition-transform duration-300 group-hover/float:scale-105">
         </div>
-        <h3 class="font-bold text-slate-900 text-xs md:text-sm leading-tight group-hover/float:text-brand transition-colors">Scaling Growth through Motion & Systems</h3>
+        <h3 class="font-sans tracking-normal font-bold text-slate-900 text-xs md:text-sm leading-tight transition-colors">Scaling Growth through Motion & Systems</h3>
         <p class="text-[9px] md:text-[10px] text-slate-500 font-medium mt-2 uppercase tracking-wider">Travel & AI</p>
       </div>
 
       <!-- Card 2: EPAM -->
-      <div class="w-24 md:w-32 lg:w-40 p-2 flex flex-col items-center text-center transform hover:-translate-y-2 hover:scale-105 hover:z-30 transition-all duration-300 cursor-pointer group/float" onclick="document.getElementById('modal-epam').showModal()">
-        <img src="/Fullfolder-yellow.png" alt="UX & Design Ops" class="w-full h-auto object-contain mb-2 md:mb-3" />
-        <h3 class="font-bold text-slate-900 text-xs md:text-sm leading-tight group-hover/float:text-brand transition-colors">Optimizing the Bench LATAM Design Operations Lifecycle</h3>
+      <div class="w-24 md:w-32 lg:w-40 p-2 flex flex-col items-center text-center transform hover:-translate-y-2 hover:z-30 transition-all duration-300 cursor-pointer group/float" onclick="document.getElementById('modal-epam').showModal()">
+        <img src="/Fullfolder-pink.png" alt="UX & Design Ops" class="w-full h-auto object-contain mb-2 md:mb-3" />
+        <h3 class="font-sans tracking-normal font-bold text-slate-900 text-xs md:text-sm leading-tight transition-colors">Optimizing the Bench LATAM Design Operations Lifecycle</h3>
         <p class="text-[9px] md:text-[10px] text-slate-500 font-medium mt-2 uppercase tracking-wider">UX & Design Ops</p>
       </div>
 
       <!-- Card 3: Airgas -->
-      <div class="w-24 md:w-32 lg:w-40 p-2 flex flex-col items-center text-center transform hover:-translate-y-2 hover:scale-105 hover:z-30 transition-all duration-300 cursor-pointer group/float" onclick="document.getElementById('modal-airgas').showModal()">
-        <img src="/Fullfolder-blue.png" alt="Design Systems" class="w-full h-auto object-contain mb-2 md:mb-3" />
-        <h3 class="font-bold text-slate-900 text-xs md:text-sm leading-tight group-hover/float:text-brand transition-colors">Elevating Design Excellence & Ops at Scale</h3>
+      <div class="w-24 md:w-32 lg:w-40 p-2 flex flex-col items-center text-center transform hover:-translate-y-2 hover:z-30 transition-all duration-300 cursor-pointer group/float" onclick="document.getElementById('modal-airgas').showModal()">
+        <img src="/Fullfolder-pink.png" alt="Design Systems" class="w-full h-auto object-contain mb-2 md:mb-3" />
+        <h3 class="font-sans tracking-normal font-bold text-slate-900 text-xs md:text-sm leading-tight transition-colors">Elevating Design Excellence & Ops at Scale</h3>
         <p class="text-[9px] md:text-[10px] text-slate-500 font-medium mt-2 uppercase tracking-wider">Design Systems</p>
       </div>
 
       <!-- Card 4: Coign -->
-      <div class="w-24 md:w-32 lg:w-40 p-2 flex flex-col items-center text-center transform hover:-translate-y-2 hover:scale-105 hover:z-30 transition-all duration-300 cursor-pointer group/float" onclick="document.getElementById('modal-coign').showModal()">
-        <img src="/Fullfolder-blue.png" alt="Fintech UX" class="w-full h-auto object-contain mb-2 md:mb-3" />
-        <h3 class="font-bold text-slate-900 text-xs md:text-sm leading-tight group-hover/float:text-brand transition-colors">Architecting an "Unmissable" Experience</h3>
+      <div class="w-24 md:w-32 lg:w-40 p-2 flex flex-col items-center text-center transform hover:-translate-y-2 hover:z-30 transition-all duration-300 cursor-pointer group/float" onclick="document.getElementById('modal-coign').showModal()">
+        <img src="/Fullfolder-pink.png" alt="Fintech UX" class="w-full h-auto object-contain mb-2 md:mb-3" />
+        <h3 class="font-sans tracking-normal font-bold text-slate-900 text-xs md:text-sm leading-tight transition-colors">Architecting an "Unmissable" Experience</h3>
         <p class="text-[9px] md:text-[10px] text-slate-500 font-medium mt-2 uppercase tracking-wider">Fintech UX</p>
       </div>
 
       <!-- Card 5: Ekos -->
-      <div class="w-24 md:w-32 lg:w-40 p-2 flex flex-col items-center text-center transform hover:-translate-y-2 hover:scale-105 hover:z-30 transition-all duration-300 cursor-pointer group/float" onclick="document.getElementById('modal-ekos').showModal()">
+      <div class="w-24 md:w-32 lg:w-40 p-2 flex flex-col items-center text-center transform hover:-translate-y-2 hover:z-30 transition-all duration-300 cursor-pointer group/float" onclick="document.getElementById('modal-ekos').showModal()">
         <img src="/Fullfolder-pink.png" alt="Production Planning" class="w-full h-auto object-contain mb-2 md:mb-3" />
-        <h3 class="font-bold text-slate-900 text-xs md:text-sm leading-tight group-hover/float:text-brand transition-colors">Revolutionizing Production Planning at Scale</h3>
+        <h3 class="font-sans tracking-normal font-bold text-slate-900 text-xs md:text-sm leading-tight transition-colors">Revolutionizing Production Planning at Scale</h3>
         <p class="text-[9px] md:text-[10px] text-slate-500 font-medium mt-2 uppercase tracking-wider">Production UX</p>
       </div>
 
       <!-- Card 6: Boost -->
-      <div class="w-24 md:w-32 lg:w-40 p-2 flex flex-col items-center text-center transform hover:-translate-y-2 hover:scale-105 hover:z-30 transition-all duration-300 cursor-pointer group/float" onclick="document.getElementById('modal-boost').showModal()">
-        <img src="/Fullfolder-yellow.png" alt="Payments & VD" class="w-full h-auto object-contain mb-2 md:mb-3" />
-        <h3 class="font-bold text-slate-900 text-xs md:text-sm leading-tight group-hover/float:text-brand transition-colors">UI Library for B2B payments webapp</h3>
+      <div class="w-24 md:w-32 lg:w-40 p-2 flex flex-col items-center text-center transform hover:-translate-y-2 hover:z-30 transition-all duration-300 cursor-pointer group/float" onclick="document.getElementById('modal-boost').showModal()">
+        <img src="/Fullfolder-pink.png" alt="Payments & VD" class="w-full h-auto object-contain mb-2 md:mb-3" />
+        <h3 class="font-sans tracking-normal font-bold text-slate-900 text-xs md:text-sm leading-tight transition-colors">UI Library for B2B payments webapp</h3>
         <p class="text-[9px] md:text-[10px] text-slate-500 font-medium mt-2 uppercase tracking-wider">Payments UX</p>
       </div>
 

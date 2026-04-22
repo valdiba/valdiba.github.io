@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #FE719A;
-  --color-brand-hover: #F7BCD0;
+  --color-brand: #FAD0DE;
+  --color-brand-hover: #f3b6c8;
   --color-archival: #E07A7A;
-  --font-serif: "Instrument Serif", serif;
+  --font-sans: "Archivo", sans-serif;
+  --font-heading: "Archivo Black", sans-serif;
 }
 
 @layer utilities {
@@ -18,12 +20,63 @@
 }
 
 @layer base {
-  h1 {
-    @apply font-serif font-normal tracking-normal text-slate-950;
+  body {
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6, dt {
+    @apply font-heading font-normal tracking-[-0.07em];
+    color: var(--color-text-heading);
+  }
+
+  p, dd, li {
+    color: var(--color-text-body);
+  }
+
+  a {
+    color: var(--color-text-link);
+  }
+}
+
+@layer components {
+  .btn-cta {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold shadow-sm transition-opacity hover:opacity-80;
+    background-color: var(--color-cta-bg);
+    color: var(--color-cta-text);
   }
 }
 
 :root {
-  /* Define el radio que usa el componente de Tailwind UI */
   --radius-lg: 1rem; 
+  
+  /* TEMA 1: Default (Fondo Blanco) */
+  background-color: #ffffff;
+  --color-text-heading: #000000;
+  --color-text-body: #000000;
+  --color-text-link: #000000;
+  --color-cta-bg: var(--color-brand);
+  --color-cta-text: #000000;
+  --color-icon-bg: var(--color-brand);
+}
+
+/* TEMA 2: Fondo Rosado */
+.theme-pink, .bg-brand {
+  background-color: var(--color-brand);
+  --color-text-heading: #000000;
+  --color-text-body: #000000;
+  --color-text-link: #000000;
+  --color-cta-bg: #000000;
+  --color-cta-text: var(--color-brand);
+  --color-icon-bg: #ffffff;
+}
+
+/* TEMA 3: Fondo Negro */
+.theme-black, .bg-black, .bg-slate-900, .bg-slate-950 {
+  background-color: #000000;
+  --color-text-heading: var(--color-brand);
+  --color-text-body: var(--color-brand);
+  --color-text-link: var(--color-brand);
+  --color-cta-bg: var(--color-brand);
+  --color-cta-text: #000000;
+  --color-icon-bg: var(--color-brand);
 }

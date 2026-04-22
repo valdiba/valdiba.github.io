@@ -3,118 +3,126 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <div class="overflow-x-hidden pt-2">
+  <div class="overflow-x-hidden pt-24">
 
-    <section class="px-6 pt-8 pb-24 mx-auto max-w-7xl lg:px-8 mt-2 mb-16">
+    <section class="px-6 pt-8 pb-24 mx-auto max-w-7xl lg:px-8 mb-16">
       <div class="max-w-3xl mx-auto text-center mb-16">
         <span class="font-bold tracking-wider uppercase text-brand text-sm mb-4 block">About me</span>
-        <h1 class="text-5xl tracking-tight text-balance text-gray-900 sm:text-7xl">I am Valentina Díaz B. </h1>
+        <h1 class="text-5xl tracking-[-0.07em] text-balance sm:text-7xl">I am Valentina Díaz B. </h1>
 
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
 
         <div class="md:col-span-5">
-          <p class="text-xl text-slate-900 leading-relaxed">I didn't start my career in a design studio, but in front of
+          <p class="text-l leading-relaxed">I didn't start my career in a design studio, but in front of
             a compiler. <strong>As a Computer Engineer turned Product Designer,</strong> I approach every project with a
             dual lens: an obsession with high-end visual aesthetics and a deep understanding of technical feasibility.
             This hybrid background allows me to bridge the gap between complex backend logic and seamless, human-centric
             interfaces.</p>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <span class="inline-flex items-center rounded-full border border-brand bg-white px-6 py-3 text-sm font-bold text-slate-700">
+              📱 Lead Product Designer
+            </span>
+            <span class="inline-flex items-center rounded-full border border-brand bg-white px-6 py-3 text-sm font-bold text-slate-700">
+              👩🏻‍💻 Informatics Engineer
+            </span>
+            <span class="inline-flex items-center rounded-full border border-brand bg-white px-6 py-3 text-sm font-bold text-slate-700">
+              📸 Analog Experience Lover
+            </span>
+            <span class="inline-flex items-center rounded-full border border-brand bg-white px-6 py-3 text-sm font-bold text-slate-700">
+              🧩 Design Systems and Design Ops Specialist
+            </span>
+          </div>
         </div>
 
-        <div class="md:col-span-7 relative h-[400px]">
-          <img src="/me-folder.png" alt="About me folder" class="w-3/4 md:w-2/3 mx-auto block h-auto object-cover">
-          <span class="absolute top-1/2 left-1/2 inline-flex items-center rounded-full border border-slate-100 bg-white px-6 py-3 text-sm font-bold text-slate-700 shadow-xl">
-            <span class="w-2.5 h-2.5 rounded-full bg-brand mr-2 block"></span>
-            Lead Product Designer
-          </span>
-          <span class="absolute top-2/3 left-8 inline-flex items-center rounded-full border border-slate-100 bg-white px-6 py-3 text-sm font-bold text-slate-700 shadow-xl">
-            <span class="w-2.5 h-2.5 rounded-full bg-brand mr-2 block"></span>
-            Informatics Engineer
-          </span>
-          <span class="absolute top-4/5 -right-8 inline-flex items-center rounded-full border border-slate-100 bg-white px-6 py-3 text-sm font-bold text-slate-700 shadow-xl">
-            <span class="w-2.5 h-2.5 rounded-full bg-brand mr-2 block"></span>
-            Analog Experience Lover
-          </span>
-          <span class="absolute top-9/10 left-1/8 inline-flex items-center rounded-full border border-slate-100 bg-white px-6 py-3 text-sm font-bold text-slate-700 shadow-xl">
-            <span class="w-2.5 h-2.5 rounded-full bg-brand mr-2 block"></span>
-            Design Systems and Design Ops Specialist
-          </span>
+        <div class="md:col-span-7 flex items-center justify-center w-full h-full">
+          <img src="/me.png" alt="About me folder" class="w-[85%] md:w-full max-w-lg h-auto object-contain shrink-0">
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-brand">
+      <div class="flex flex-col items-center justify-center text-center w-full">
+        <h2 class="text-5xl tracking-[-0.07em] text-balance sm:text-6xl mb-12">Technical Stack & Expertise</h2>
+
+        <div class="flex flex-wrap items-center justify-center gap-3 w-full max-w-7xl mx-auto pb-4 px-6 lg:px-8">
+          <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">⭐️ Figma</span>
+
+          <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">⭐️ Stakeholder Management</span>
+
+            <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">⭐️ Design
+            Systems</span>
+
+          <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">⭐️ Mentoring</span>
+
+          <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">⭐️ Design
+            Ops</span>
+
+          <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">AI
+            Prompting</span>
+          <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">React</span>
+          <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">Tailwind
+            CSS</span>
+          <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">Astro</span>
+          <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">Lottie
+            / Motion</span>
+          <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">Git</span>
+          <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">Advanced
+            Prototyping</span>
+          <span
+            class="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm cursor-default whitespace-nowrap">OOUX</span>
         </div>
       </div>
     </section>
 
     <section class="px-6 py-24 mx-auto max-w-7xl lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+      <div class="flex flex-col gap-32">
 
-        <div class="md:col-span-6 prose prose-lg prose-slate max-w-none text-slate-700">
-          <h2
-					class="mx-auto mt-2 text-center text-5xl tracking-tight text-balance text-gray-900 sm:text-6xl">The Technical Rigor behind the Pixel</h2>
-          <p>My engineering background defines how I approach design. I don't just aim for visual beauty; I ensure
-            products are logically consistent and technically scalable. I have audited extensive Figma libraries and
-            migrated multi-brand design systems (Web, iOS, Android) at EPAM for Fortune 500 clients, guaranteeing 100%
-            alignment between design and development. I am a firm believer in democratizing design through solid Design
-            Ops and clear governance, establishing efficient workflows that boost team velocity without sacrificing
-            visual quality.</p>
+        <div class="flex flex-col sm:flex-row items-center w-full gap-8">
+          <div class="prose prose-lg prose-slate max-w-3xl">
+            <h2
+					  class="mt-2 text-left text-5xl tracking-[-0.07em] text-balance sm:text-6xl">The Technical Rigor behind the Pixel</h2>
+            <p class="text-lg leading-relaxed">My engineering background defines how I approach design. I don't just aim for visual beauty; I ensure
+              products are logically consistent and technically scalable. I have audited extensive Figma libraries and
+              migrated multi-brand design systems (Web, iOS, Android) at EPAM for Fortune 500 clients, guaranteeing 100%
+              alignment between design and development. I am a firm believer in democratizing design through solid Design
+              Ops and clear governance, establishing efficient workflows that boost team velocity without sacrificing
+              visual quality.</p>
+          </div>
+          <div class="w-full sm:flex-1 flex justify-center">
+            <img src="/cursor.jpg" alt="Cursor icon" class="w-20 sm:w-40 shrink-0 object-contain" />
+          </div>
         </div>
 
-        <div class="md:col-span-6 prose prose-lg prose-slate max-w-none text-slate-700">
-          <h2
-					class="mx-auto mt-2 text-center text-5xl tracking-tight text-balance text-gray-900 sm:text-6xl">A Curated Visual Eye</h2>
-          <p>Beyond systems, I possess a passion for premium aesthetics and visual storytelling. This facet is nurtured
-            by my exploration of analog photography and creative direction, where organizational rigor meets visual
-            curation. I bring this critical eye to every interface, utilizing advanced prototyping and
-            micro-interactions (Lottie, motion standards) to elevate the final user experience. I understand a brand not
-            as a logo, but as a holistic experience that must be polished and consistent at every digital touchpoint.
-          </p>
+        <div class="flex flex-col sm:flex-row items-center w-full gap-8">
+          <div class="w-full sm:flex-1 flex justify-center order-last sm:order-first">
+            <img src="/eye.png" alt="Eye icon" class="w-50 sm:w-100 shrink-0 object-contain" />
+          </div>
+          <div class="prose prose-lg prose-slate max-w-3xl">
+            <h2
+					  class="mt-2 text-right text-5xl tracking-[-0.07em] text-balance sm:text-6xl">A Curated Visual Eye</h2>
+            <p class="text-lg text-right leading-relaxed">Beyond systems, I possess a passion for premium aesthetics and visual storytelling. This facet is nurtured
+              by my exploration of analog photography and creative direction, where organizational rigor meets visual
+              curation. I bring this critical eye to every interface, utilizing advanced prototyping and
+              micro-interactions (Lottie, motion standards) to elevate the final user experience. I understand a brand not
+              as a logo, but as a holistic experience that must be polished and consistent at every digital touchpoint.
+            </p>
+          </div>
         </div>
 
-      </div>
-    </section>
-
-    <section class="px-6 py-20 mx-auto max-w-7xl lg:px-8 border-t border-slate-100 mt-12">
-      <div class="flex flex-col items-center justify-center text-center">
-        <h3 class="text-sm font-bold tracking-widest uppercase text-slate-400 mb-8">Technical Stack & Expertise</h3>
-
-        <div class="flex flex-wrap justify-center gap-3 max-w-4xl">
-          <span
-            class="inline-flex items-center rounded-full border border-brand bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">Figma</span>
-
-          <span
-            class="inline-flex items-center rounded-full border border-brand bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">Stakeholder Management</span>
-
-            <span
-            class="inline-flex items-center rounded-full border border-brand bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">Design
-            Systems</span>
-
-          <span
-            class="inline-flex items-center rounded-full border border-brand bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">Mentoring</span>
-
-          <span
-            class="inline-flex items-center rounded-full border border-brand bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">Design
-            Ops</span>
-
-          <span
-            class="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">AI
-            Prompting</span>
-          <span
-            class="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">React</span>
-          <span
-            class="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">Tailwind
-            CSS</span>
-          <span
-            class="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">Astro</span>
-          <span
-            class="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">Lottie
-            / Motion</span>
-          <span
-            class="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">Git</span>
-          <span
-            class="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">Advanced
-            Prototyping</span>
-          <span
-            class="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:border-brand hover:text-brand transition-colors cursor-default">OOUX</span>
-        </div>
       </div>
     </section>
 

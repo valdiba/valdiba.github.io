@@ -1,15 +1,15 @@
-<header class="sticky top-4 z-50 mx-4 mt-4 max-w-7xl rounded-full bg-white/70 backdrop-blur-md border border-gray-200 shadow-sm lg:mx-auto">
-  <nav aria-label="Global" class="flex items-center justify-between px-6 py-4 lg:px-8">
+<header id="main-header" class="group fixed top-0 z-50 w-full bg-transparent transition-all duration-300">
+  <nav aria-label="Global" class="mx-auto max-w-7xl flex items-center justify-between px-6 py-4 lg:px-8">
     
     <div class="flex lg:flex-1">
       <a href="/" class="-m-1.5 p-1.5">
         <span class="sr-only">Valentina Díaz</span>
-        <span class="text-2xl font-serif font-normal tracking-normal text-slate-900">Valdiba.</span>
+        <span class="text-2xl font-heading tracking-[-0.07em] text-black transition-colors">Valdiba.</span>
       </a>
     </div>
 
     <div class="flex lg:hidden">
-      <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:bg-gray-50 transition-colors">
+      <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black hover:bg-gray-50 group-[.bg-brand]:hover:bg-white/30 transition-colors">
         <span class="sr-only">Abrir menú principal</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -18,9 +18,9 @@
     </div>
 
     <div class="hidden lg:flex lg:gap-x-12">
-      <a href="/" class="text-sm/6 font-semibold text-slate-600 hover:text-brand transition-colors">Home</a>
-      <a href="/casos" class="text-sm/6 font-semibold text-slate-600 hover:text-brand transition-colors">Case Studies</a>
-      <a href="/sobre-mi" class="text-sm/6 font-semibold text-slate-600 hover:text-brand transition-colors">About Me</a>
+      <a href="/" class="text-sm/6 font-semibold text-black hover:opacity-70 transition-opacity">Home</a>
+      <a href="/casos" class="text-sm/6 font-semibold text-black hover:opacity-70 transition-opacity">Case Studies</a>
+      <a href="/sobre-mi" class="text-sm/6 font-semibold text-black hover:opacity-70 transition-opacity">About Me</a>
     </div>
   </nav>
 
@@ -32,7 +32,7 @@
           <div class="flex items-center justify-between">
             <a href="/" class="-m-1.5 p-1.5">
               <span class="sr-only">Valentina Díaz</span>
-              <span class="text-2xl font-black tracking-tighter text-slate-900">VD.</span>
+              <span class="text-2xl font-heading tracking-[-0.07em] text-slate-900">VD.</span>
             </a>
             <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700 hover:bg-gray-50 transition-colors">
               <span class="sr-only">Cerrar menú</span>
@@ -57,3 +57,19 @@
     </dialog>
   </el-dialog>
 </header>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const header = document.getElementById('main-header');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.remove('bg-transparent');
+        header.classList.add('bg-brand', 'shadow-md');
+      } else {
+        header.classList.add('bg-transparent');
+        header.classList.remove('bg-brand', 'shadow-md');
+      }
+    });
+  });
+</script>
