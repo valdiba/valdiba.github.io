@@ -1,4 +1,6 @@
 ---
+import { coverMap, coverClasses } from "../data/caseStudies.ts";
+
 interface Props {
   id: string;
   title: string;
@@ -27,32 +29,6 @@ const {
   platform,
 } = Astro.props;
 
-const coverMap: Record<string, string[]> = {
-  "modal-expedia": [
-    "/expedia-cover-3.png",
-    "/expedia-cover-2.png",
-    "/expedia-cover-1.png",
-  ],
-  "modal-epam": ["/epam-cover-2.png", "/epam-cover-1.png"],
-  "modal-airgas": [
-    "/airgas-cover-3.png",
-    "/airgas-cover-2.png",
-    "/airgas-cover-1.png",
-  ],
-  "modal-coign": [
-    "/coign-cover-3.png",
-    "/coign-cover-2.png",
-    "/coign-cover-1.png",
-  ],
-  "modal-ekos": ["/ekos-cover-3.png", "/ekos-cover-2.png", "/ekos-cover-1.png"],
-  "modal-boost": ["/boost-cover-2.png", "/boost-cover-1.png"],
-};
-
-const coverClasses = [
-  "absolute inset-0 w-full h-full object-contain z-[3] p-3.5 md:p-5 rounded-xl transition-transform duration-300 group-hover/float:-translate-y-3 md:group-hover/float:-translate-y-6 group-hover/float:-translate-x-2 md:group-hover/float:-translate-x-3 group-hover/float:scale-105 group-hover/float:-rotate-12",
-  "absolute inset-0 w-full h-full object-contain z-[4] p-3.5 md:p-5 rounded-xl transition-transform duration-300 group-hover/float:-translate-y-1 md:group-hover/float:-translate-y-2 group-hover/float:translate-x-2 md:group-hover/float:translate-x-3 group-hover/float:scale-105 group-hover/float:rotate-12",
-  "absolute inset-0 w-full h-full object-contain z-[5] p-3.5 md:p-5 rounded-xl transition-transform duration-300 group-hover/float:-translate-y-2 md:group-hover/float:-translate-y-4 group-hover/float:scale-110 group-hover/float:rotate-3",
-];
 ---
 
 <dialog
